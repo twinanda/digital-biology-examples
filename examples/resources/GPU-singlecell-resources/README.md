@@ -1,6 +1,6 @@
-## GPU-enabled Accelerated Single Cell Analysis Resources
+# GPU-enabled Accelerated Single Cell Analysis Resources
 
-**What is NVIDIA Clara™ for Genomics?**  
+## What is NVIDIA Clara™ for Genomics? 
 NVIDIA Clara**™** for Genomics is a suite of GPU-enabled software tools that are designed to provide unprecedented speed and accuracy in precision genomics.
 
 This repository focuses on specific tools that will be valuable for analyzing data related to single cell. It provides resources and education on them, as well as a way to get started and 
@@ -17,9 +17,9 @@ For those interested in additional healthcare life science tools related to sing
 | [cuCIM](https://github.com/rapidsai/cucim)  | Open-source, accelerated computer vision and image processing software library for multidimensional images used in biomedical, geospatial, material and life science, and remote sensing use cases. |
 
 Additional NVIDIA libraries related to accelerated data science, data loading, or file I/O that could be utilized for single cell data.
-
-| [cuDF](https://github.com/rapidsai/cudf) (RAPIDS) | cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and otherwise manipulating data. |
+| Tool Name | Description |
 | :---- | :---- |
+| [cuDF](https://github.com/rapidsai/cudf) (RAPIDS) | cuDF is a GPU DataFrame library for loading, joining, aggregating, filtering, and otherwise manipulating data. |
 | [cuML](https://github.com/rapidsai/cuml) (RAPIDS) | cuML is a suite of libraries that implement machine learning algorithms and mathematical primitives functions that share compatible APIs with other RAPIDS projects. |
 | [cuVS](https://github.com/rapidsai/cuvs) (RAPIDS) | cuVS is a new library mostly derived from the approximate nearest neighbors and clustering algorithms in the RAPIDS RAFT library of machine learning and data mining primitives. |
 | [cuGraph](https://github.com/rapidsai/cugraph) (RAPIDS) | cuGraph is a repo that represents a collection of packages focused on GPU-accelerated graph analytics including support for property graphs and remote (graph as a service) operations. |
@@ -29,18 +29,19 @@ Additional NVIDIA libraries related to accelerated data science, data loading, o
 
 Additional Community Resources related to Single Cell
 
-| [Scverse](https://scverse.org/) | Foundational tools for single-cell omics data analysis.  |
+| Tool Name | Description |
 | :---- | :---- |
+| [Scverse](https://scverse.org/) | Foundational tools for single-cell omics data analysis.  |
 | [segger](https://elihei2.github.io/segger_dev/) | segger is a cutting-edge tool for cell segmentation in single-molecule spatial omics datasets. By leveraging graph neural networks (GNNs) and heterogeneous graphs, segger offers unmatched accuracy and scalability. |
 | [cz-benchmarks](https://virtualcellmodels.cziscience.com/benchmarks#:~:text=cz-benchmarks%20is%20a%20standardized,to%20expand%20to%20additional%20domains\).) | cz-benchmarks is a standardized evaluation and comparison of machine learning models for biological applications first in the single-cell transcriptomics domain |
 
-**Getting Started with RAPIDS-singlecell and NVIDIA RAPIDS**
+ ## Getting Started with RAPIDS-singlecell and NVIDIA RAPIDS
 
-*One-click setup* 
+### One-click setup
 
 For users who want to get started right away, the compute environment can be set up with one click using the [NVIDIA Single Cell Analysis Blueprint](https://build.nvidia.com/nvidia/single-cell-analysis)
 
-*Advanced setup*
+### Advanced setup
 
 For users who want more control over the configuration, try this more hands-on setup. 
 
@@ -61,7 +62,7 @@ Go to [brev homepage](https://brev.nvidia.com/environment/new)
 
 More detailed instructions can be found in this [README.md](https://github.com/NVIDIA-AI-Blueprints/single-cell-analysis-blueprint/blob/main/docs/creating_custom_brev.md). 
 
-**How to Get Help**
+## How to Get Help
 
 Many of the tools listed above have a developer community around them, which is a great place to start looking at previously answered questions and to ask new questions. 
 
@@ -69,7 +70,7 @@ Many of the tools listed above have a developer community around them, which is 
 * The scverse hosts a user forum on [Zulip](https://scverse.zulipchat.com/) and is a great starting point for troubleshooting.   
 * NVIDIA hosts user forums for [Parabricks](https://forums.developer.nvidia.com/c/healthcare/parabricks/290), [BioNeMo](https://forums.developer.nvidia.com/c/healthcare/bionemo/643), and [MONAI](https://forums.developer.nvidia.com/c/healthcare/monai/647). 
 
-**Learn More**
+## Learn More
 
 [Single Cell Blog](https://developer.nvidia.com/blog/driving-toward-billion-cell-analysis-and-biological-breakthroughs-with-rapids-singlecell/)  
 [Blueprint](https://build.nvidia.com/nvidia/single-cell-analysis)  
