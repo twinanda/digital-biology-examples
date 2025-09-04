@@ -37,11 +37,46 @@ Additional Community Resources related to Single Cell
 
  ## Getting Started with RAPIDS-singlecell and NVIDIA RAPIDS
 
-### One-click setup
+This section will walk users through using Brev.dev, a platform which will provide optimized compute and software environments. 
+
+Please Note: **Brev instances need to be manually shut down when not in use, or you will be charged**
+
+### Creating a Brev.dev account 
+
+The following steps will guide you through setting up your brev.dev account, creating a team, and redeeming credits.
+
+* Create a brev.dev account  
+  * The first member of your team should sign up for an account on [brev.nvidia.com](http://brev.nvidia.com/).  
+* Create a new organization to share resources with your team  
+  * On the brev.dev homepage, click on your profile icon in the top-right corner.  
+  * Go to Your Profile.  
+  * Click the \+ Create a new organization button.  
+  * Give your organization a name (e.g., "Team Omics").  
+* Redeeming credits  
+  * Note: If you are in a sponsored event, you will receive coupon codes to run on brev.dev. Be mindful of how you manage credits to prevent exhaustion \- close instances, keep it to a closed group.   
+  * Go to Billing  
+    * Within your newly created organization, navigate to the Billing tab.  
+  * Redeem the Code  
+    * Under the "Pay For Compute" section, find the "Redeem Code" button.  
+  * Enter the Coupon Code  
+    * Enter the provided hackathon coupon code.  
+  * Click Redeem  
+    * Click the Redeem button to apply the credits to your organization.  
+* Inviting Team Members  
+  * Go to the Team Tab  
+    * Navigate to the Team tab within your organization.  
+  * Generate Invite Link  
+    * Click on the Generate Invite Link button.  
+  * Share the Link  
+    * Copy the generated invite link and share it with the other members of your team. This link will allow them to join your organization and share the allocated compute credits.
+
+### Setting up the compute environment
+
+#### One-click setup 
 
 For users who want to get started right away, the compute environment can be set up with one click using the [NVIDIA Single Cell Analysis Blueprint](https://build.nvidia.com/nvidia/single-cell-analysis)
 
-### Advanced setup
+#### Advanced setup
 
 For users who want more control over the configuration, try this more hands-on setup. 
 
