@@ -25,52 +25,25 @@ NVIDIA BioNeMo NIMS can be integrated into existing workflows to leverage cuttin
 ## Setup
 
 ### Preparing the GenMol NIM
-Please visit the [NVIDIA GenMol NIM page](https://build.nvidia.com/nvidia/genmol) for additional details and the [GenMol NIM Documentation](https://docs.nvidia.com/nim/bionemo/genmol/latest/overview.html) to get started.
 
-These basic steps should be run on the system hosting the GenMol NIM.
+Install your GenMol NIM through Nebius Applications Catalog. You can verify that the NIM has started successfully by querying its status. 
+After replacing the URL in the following command to the exposed NIM endpoint, it will return `{"status":"ready"}` when the NIM is ready:
 
-1. Set your NGC API Key: `export NGC_API_KEY=<PASTE_API_KEY_HERE>`
-2. Run `docker login --username '$oauthtoken' --password $NGC_API_KEY`
-3. Run the container:
-   ```bash
-      export LOCAL_NIM_CACHE=~/.cache/nim
-      docker run --rm --name genmol --runtime=nvidia \
-        -e NGC_API_KEY \
-        -v $LOCAL_NIM_CACHE:/opt/nim/.cache \
-        --shm-size=2G \
-        --ulimit memlock=-1 \
-        --ulimit stack=67108864 \
-        -p 8000:8000 \
-        nvcr.io/nim/nvidia/genmol:1.0.0
-    ```
-
-> **NOTE:**  For convenience, define your `LOCAL_NIM_CACHE` to store the models and databases used by the GenMol NIM.  Using the `LOCAL_NIM_CACHE` will avoid having to re-download these files on subsequent runs.
-
-You can verify that the NIM has started successfully by querying its status.  The following command will return `{"status":"ready"}` when the NIM is ready:
 ```bash
    curl -X 'GET' \
-     'http://localhost:8000/v1/health/ready' \
+     'http://{URL}/v1/health/ready' \
      -H 'accept: application/json'
 ```
 
 ### Jupyter Lab Environment
 
-```bash
-    # If the python3 venv package is not installed, install using your OS package manager.  For example, for apt-based distros:
-    apt install python3-venv
-
-    # Then create a venv and install the Jupyter Lab environment
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install jupyterlab ipywidgets
-```
+Prepare your Jupyter Lab environment locally, or use Nebius Standalone Application. 
 
 ### GenMol Notebook Dependencies and Launching the Lab Environment
 
-Once the GenMol NIM and Jupyter Lab environment have been configured as above, clone this repository and launch the notebooks with:
+Once the GenMol NIM and Jupyter Lab environment have been configured as above, clone this repository and make sure you install the requirements to run the notebooks
+
 ```bash
-    source venv/bin/activate
     pip install -r requirements.txt
-    jupyter-lab
 ```
 
